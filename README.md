@@ -1,24 +1,24 @@
 # World Cup Database
 
-Projet réalisé dans le cadre du curriculum **Relational Databases** de freeCodeCamp.
+Project completed as part of the freeCodeCamp **Relational Databases** curriculum.
 
 ## Description
 
-Ce projet consiste à créer, remplir et interroger une base de données PostgreSQL contenant les résultats des trois derniers tours (huitièmes, quarts, demi-finales, finale) de la Coupe du Monde depuis 2014.
+This project consists of creating, populating, and querying a PostgreSQL database containing the results of the last three rounds (round of 16, quarterfinals, semifinals, finals) of the World Cup since 2014.
 
 ## Structure
 
-- `worldcup.sql` — dump complet de la base de données (structure + données)
-- `insert_data.sh` — script qui lit `games.csv` et insère les données dans les tables `teams` et `games`
-- `queries.sh` — script contenant les requêtes SQL demandées, avec leurs résultats
+- `worldcup.sql` — full database dump (structure + data)
+- `insert_data.sh` — script that reads `games.csv` and inserts the data into the `teams` and `games` tables
+- `queries.sh` — script containing the requested SQL queries along with their outputs
 
-## Base de données
+## Database
 
-Deux tables :
-- **teams** : `team_id` (clé primaire), `name` (unique)
-- **games** : `game_id` (clé primaire), `year`, `round`, `winner_id`, `opponent_id`, `winner_goals`, `opponent_goals`
+Two tables:
+- **teams**: `team_id` (primary key), `name` (unique)
+- **games**: `game_id` (primary key), `year`, `round`, `winner_id`, `opponent_id`, `winner_goals`, `opponent_goals`
 
-## Utilisation
+## Usage
 
 ```bash
 psql -U postgres < worldcup.sql
