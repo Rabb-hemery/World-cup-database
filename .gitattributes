@@ -1,3 +1,2 @@
-worldcup.sql linguist-vendored=false
-
-  
+*.sql linguist-language=SQL
+*.sql linguist-detectable=true
